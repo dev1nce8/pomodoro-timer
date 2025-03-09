@@ -89,10 +89,35 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 1rem;
 }
 
 .timer {
 	font-size: 4rem;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	border: 3px solid #504B50;
+	border-radius: 1rem;
+	display: flex;
+}
+
+#minutes,
+#seconds {
+	display: inline-block;
+	padding: 1rem;
+}
+
+#minutes {
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	background-color: #F2E2B1;
+}
+
+#seconds {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	background-color: #EBE5C2;
 }
 
 #start-stop-btn {
